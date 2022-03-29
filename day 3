@@ -1,0 +1,127 @@
+1 index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON iteration</title>
+</head>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+2 script.js
+
+var person = [
+    {
+    name: "honestraj",
+    age : 28,
+    gender : "male"
+},
+{
+    name: "raja",
+    age : 56,
+    gender : "male"
+},
+{
+    name: "shanthi",
+    age : 45,
+    gender : "female"
+}
+]
+
+//for loop
+console.log("for loop") // ==> this line is used to print  loopnames in console to show difference
+
+
+for(let i=0; i<person.length ; i++){
+    console.log(person[i])
+}
+
+//for in
+console.log("for in") // ==> this line is used to print  loopnames in console to show difference
+
+
+for(let key in person){
+    console.log(person[key])
+}
+
+//for of
+console.log("for of ") // ==> this line is used to print  loopnames in console to show difference
+
+
+for(let key of person){
+    console.log(key)
+}
+
+//forEach 
+console.log("forEach ") // ==> this line is used to print  loopnames in console to show difference
+
+
+person.forEach((element) => {
+    console.log(element)
+})
+
+
+
+
+
+3 resume
+
+
+{
+    "Resume" : {
+      "name" : "honestraj",
+      "email" : "honestjack2@gmail.com",
+      "phone" : "98415176**",
+      "label" : "full stack Developer",
+      "summary" : "Seeking a challenging position in a reputed organization where i can learn new skills,expand my knowledge,and leverage my learnings."
+    },
+    
+    "AccademicBackround" :[ {
+       "degree" : "UG",
+        "institution" : "svcoe,vellore",
+        "dept" : "Ece",
+        "percentage" : "7.13"
+      },
+      {
+        "degree" : "HSC",
+        "institution" : "gov boys higher secondary school",
+        "percentage" : "68.2%"
+        },
+      {
+        "degree" : "SSC",
+        "institution" :"gov boys higher secondary school",
+        "percentage" : "75.5%"
+      }
+    ],
+    "projects" : [
+      {
+       "title" : "Driver Drowsiness Detection System", 
+       "description" : "Retina sensor is used to detect driver drowsiness and automatic breaking system."
+       },
+      {
+       "title":"Steam electric generator",
+        "description" : "school time project for steam is used to genrate electrical power."
+       },
+       {
+       "title": "Basic Calculator Using Javascript",
+        "description" : "Create simple responsive calculator."
+       }
+    ],
+    "skills" : {
+      "frontend" : "html,css,bootstrap",
+      "backend" : "node.js,react.js",
+      "database" : "sql"
+    },
+    "languages" :"Tamil,kanada, English" 
+  }
+  
+  
+  
+  3
